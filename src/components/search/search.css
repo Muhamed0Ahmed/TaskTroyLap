@@ -1,0 +1,114 @@
+.container-search{
+    display:grid;
+    grid-template-rows:80px 100px auto;
+    grid-template-columns:auto 300px;
+    grid-template-areas:"header header" "search current" "main orders";
+
+}
+.header-all-pre{
+    grid-area:header;
+    position:relative;
+}
+.search-all-pre{
+    grid-area:search;
+}
+.current-orders-name{
+    grid-area:current;
+}
+.main-all-pre{
+    grid-area:main;
+}
+.orders-detail{
+    grid-area:orders;
+}
+
+/* styles header all pre  */
+.header-order-prev{
+    background:linear-gradient( var(--color-green-dark),var(--color-main-green) );
+    /* padding:10px; */
+    height: 100%;
+    padding-top:10px;
+    color:var(--color-white);
+}
+.header-order-prev button{
+    position:absolute;
+    top:25px;
+    right:25px;
+    background-color: transparent;
+    border:none;
+}
+
+
+.current-orders-name{
+    background: var(--color-main-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.current-orders-name span{
+    color:var(--color-dark);
+    background-color: var(--color-light);
+    border-radius: 5px;
+}
+
+.search-all-pre{
+    padding:10px;
+    background-color:var(--color-light)
+}
+.search-all-pre .input-group{
+    width:75%;
+}
+.search-all-pre .input-group-search,
+.search-all-pre button.btn{
+    background-color:var(--color-white);
+    border-left:1px solid var(--color-light);
+}
+
+.search-all-pre .categ{
+    background-color: var(--color-white);
+    padding:3px 5px;
+    border-radius: 15px;
+    margin-right:10px;
+    display:flex;
+    gap:10px;
+    font-size:14px;
+}
+.search-all-pre .categ button{
+    border:none;
+    background-color: transparent;
+    padding:0;
+}
+
+/* style for orders-detail  */
+.orders-detail{
+    padding:20px;
+    background-color: var(--color-green-light);
+
+}
+.orders-detail .title button{
+    background-color: var(--color-main-green);
+    color:var(--color-white);
+    border:none;
+    border-radius:10px ;
+    padding:0px 10px;
+
+}
+  
+.product{
+    background-color:var(--color-white);
+    margin:10px 0px;
+    padding:6px 3px;
+}
+.product .count{
+    width:35px;
+    height:35px;
+    padding:5px;
+    border:1px solid var(--color-dark);
+    border-radius:3px;
+    text-align:center;
+}
+.container-cart .notes{
+    padding:10px 5px;
+    border-bottom:2px solid var(--color-main-green);
+}
