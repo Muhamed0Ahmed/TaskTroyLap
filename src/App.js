@@ -148,6 +148,7 @@ class  App extends Component {
   return (
     <div className="container-xxl">
       <BrowserRouter>
+      
         <Routes >
           <Route path='/' element={<Home  products={this.state.products} cart={this.state.cart} onclick={this.addToCart}/>}/>
           <Route path="/allpre" element={<AllPreOrders/>}/>
